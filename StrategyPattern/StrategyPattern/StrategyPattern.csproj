@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Duck\Duck.cs" />
+    <Compile Include="Action\FlyNoWay.cs" />
+    <Compile Include="Action\FlyWithWing.cs" />
+    <Compile Include="Duck\GreenDuck.cs" />
+    <Compile Include="Action\IFlyBehavior.cs" />
+    <Compile Include="Action\IQuackBehavior.cs" />
+    <Compile Include="Duck\ModelDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Action\MuteSqueak.cs" />
+    <Compile Include="Action\Squeak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

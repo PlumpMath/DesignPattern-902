@@ -10,7 +10,20 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
+            Duck greenDuck = new GreenDuck();
+            greenDuck.PeformaneFly();
+            greenDuck.PeformaneQuack();
 
+            Duck modelDuck = new ModelDuck();
+            modelDuck.PeformaneFly();
+            modelDuck.PeformaneQuack();
+
+            modelDuck.setFlyBehavior(new FlyWithWing());
+            modelDuck.setQuackBehavior(new MuteSqueak());
+            modelDuck.PeformaneFly();
+            modelDuck.PeformaneQuack();
+
+            Console.ReadLine();
         }
     }
 }
