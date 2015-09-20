@@ -10,6 +10,13 @@ namespace SimpleFactoryPattern
     {
         static void Main(string[] args)
         {
+
+            var factory = new SimplePizzaFactory();
+
+            var pizzaStore = new PizzaStore(factory);
+            pizzaStore.orderPizza("CheesePizza");
+            pizzaStore.orderPizza("ClamPizza");
+            Console.ReadLine();
         }
     }
 }
