@@ -17,6 +17,7 @@ namespace AbstractFactoryPattern
             pizza.bake();
             pizza.cut();
             pizza.box();
+            pizza.toString();
             return pizza;
         }
 

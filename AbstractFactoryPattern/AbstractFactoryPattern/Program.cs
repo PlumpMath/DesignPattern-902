@@ -12,9 +12,11 @@ namespace AbstractFactoryPattern
         {
             PizzaStore nyPizzaStore = new NYStylePizzaStore();
             nyPizzaStore.orderPizza("cheese");
+            nyPizzaStore.orderPizza("clam");
 
             PizzaStore chicagoPizzaStore = new ChicagoStylePizzaStore();
-            nyPizzaStore.orderPizza("cheese");
+            chicagoPizzaStore.orderPizza("cheese");
+            chicagoPizzaStore.orderPizza("clam");
 
             Console.ReadLine();
         }

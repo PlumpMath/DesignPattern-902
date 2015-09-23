@@ -38,7 +38,7 @@ namespace AbstractFactoryPattern
             this.name = name;
         }
 
-        public string toString()
+        public void toString()
         {
             StringBuilder result = new StringBuilder();
 
@@ -63,8 +63,7 @@ namespace AbstractFactoryPattern
 
             }
 
-
-            return result.ToString();
+            Console.WriteLine(result.ToString());
         }
 
     }
