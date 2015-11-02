@@ -7,24 +7,25 @@ using System.Threading.Tasks;
 
 namespace CommandPattern
 {
-    public class LightOnCommand : Command
+    public class LightOffCommand : Command
     {
         Light light;
 
-        public LightOnCommand(Light light)
+        public LightOffCommand(Light light)
         {
             this.light = light;
         }
 
         public void execute()
         {
-            light.on();
+            light.off();
         }
 
         public void undo()
         {
-            light.off();
+            light.on();
         }
+
     }
 
 

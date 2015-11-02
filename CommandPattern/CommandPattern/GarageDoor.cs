@@ -10,7 +10,7 @@ namespace CommandPattern
         }
         public void down()
         {
-
+            Console.WriteLine("Garage Door is close");
         }
         public void stop()
         {

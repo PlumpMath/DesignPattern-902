@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace CommandPattern
 {
-    public class GarageDoorOpenCommand : Command
+    public class GarageDoorCloseCommand : Command
     {
         GarageDoor garageDoor;
 
         public void execute()
         {
-            garageDoor.up();
+            garageDoor.down();
         }
 
         public void undo()
         {
-            garageDoor.down();
+            garageDoor.up();
         }
 
-        public GarageDoorOpenCommand(GarageDoor garageDoor)
+        public GarageDoorCloseCommand(GarageDoor garageDoor)
         {
             this.garageDoor = garageDoor;
         }

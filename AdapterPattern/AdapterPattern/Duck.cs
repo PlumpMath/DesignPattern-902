@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommandPattern
+namespace AdapterPattern
 {
-    public interface Command
+    public interface Duck
     {
-        void execute();
-        void undo(); 
+        void quack();
+        void fly();
     }
 }

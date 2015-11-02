@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommandPattern
+namespace AdapterPattern
 {
-    public interface Command
+    public interface Turkey
     {
-        void execute();
-        void undo(); 
+        void gobble();
+        void fly();
     }
 }
